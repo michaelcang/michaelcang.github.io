@@ -8,12 +8,12 @@ Algoritma #1
 
 Pseudocode #1
 -------------
-READ resultan
-READ m = 600
-READ a = 2
+READ resultan  
+READ m = 600  
+READ a = 2  
 
-COMPUTE resultan AS m * a
-DISPLAY resultan
+COMPUTE resultan AS m * a  
+DISPLAY resultan  
 
 
 Algoritma #2
@@ -23,13 +23,13 @@ Algoritma #2
 
 Pseudocode #2
 -------------
-READ and SAVE  "tahun
+READ and SAVE "tahun"  
 
-IF "tahun" mod 4 = 0 AND "tahun" mod 100 != 0 OR "tahun" mod 4 = 0 AND "tahun" mod 100 = 0 AND "tahun" mod 400 = 0
-	DO DISPLAY  "tahun kabisat"
-ELSE
-	DO DISPLAY "bukan tahun kabisat"
-ENDIF
+IF "tahun" mod 4 = 0 AND "tahun" mod 100 != 0 OR "tahun" mod 4 = 0 AND "tahun" mod 100 = 0 AND "tahun" mod 400 = 0  
+  DO DISPLAY  "tahun kabisat"  
+ELSE  
+  DO DISPLAY "bukan tahun kabisat"  
+ENDIF  
 
 
 Algoritma #3
@@ -41,12 +41,12 @@ Algoritma #3
  
 Pseudocode #3
 -------------
-READ "jumlahBaju" = 0
+READ "jumlahBaju" = 0  
 
-WHILE jumlahBaju" < 21
-	ADD "jumlahBaju" by 1
+WHILE "jumlahBaju" < 21  
+  ADD "jumlahBaju" by 1  
 
-DISPLAY "nyalakan mesin cuci"
+DISPLAY "nyalakan mesin cuci"  
 
 
 Algoritma #4
@@ -57,10 +57,10 @@ Algoritma #4
 
 Pseudocode #4
 -------------
-READ "jumlahMurid" = 0
-WHILE "jumlahMurid" > 41
-	IF "kuku panjang"
-		DO "hukum murid"
-	ELSE 
-		DO "puji murid"
-ENDWHILE
+READ "jumlahMurid" = 0  
+WHILE "jumlahMurid" > 41  
+  IF "kuku panjang"  
+    DO "hukum murid"  
+  ELSE  
+    DO "puji murid"  
+ENDWHILE  
