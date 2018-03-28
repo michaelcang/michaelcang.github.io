@@ -1,46 +1,49 @@
 var tanggal = 21;
-var bulan = 3;
+var bulan = 13;
 var tahun = 1990;
 
+var namaBulan = ''
 
 switch (bulan) {
 	case 1:
-		console.log(tanggal + ' Januari ' + tahun)
+		namaBulan = 'Januari'
 		break;
 	case 2:
-		console.log(tanggal + ' Februari ' + tahun)
+		namaBulan = 'Febuari'
 		break;
 	case 3:
-		console.log(tanggal + ' Maret ' + tahun)
+		namaBulan = 'Maret'
 		break;
 	case 4:
-		console.log(tanggal + ' April ' + tahun)
+		namaBulan = 'April'
 		break;
 	case 5:
-		console.log(tanggal + ' Mei ' + tahun)
+		namaBulan = 'Mei'
 		break;
 	case 6:
-		console.log(tanggal + ' Juni ' + tahun)
+		namaBulan = 'Juni'
 		break;
 	case 7:
-		console.log(tanggal + ' Juli ' + tahun)
+		namaBulan = 'Juli'
 		break;
 	case 8:
-		console.log(tanggal + ' Agustus ' + tahun)
+		namaBulan = 'Agustus'
 		break;
 	case 9:
-		console.log(tanggal + ' September ' + tahun)
+		namaBulan = 'September'
 		break;
 	case 10:
-		console.log(tanggal + ' Oktober ' + tahun)
+		namaBulan = 'Oktober'
 		break;
 	case 11:
-		console.log(tanggal + ' November ' + tahun)
+		namaBulan = 'November'
 		break;
 	case 12:
-		console.log(tanggal + ' Desember ' + tahun)
+		namaBulan = 'Desember'
 		break;
 	default:
 		console.log('invalid bulan')
 		break;
 }
+
+console.log(tanggal + ' ' + namaBulan + ' ' + tahun)

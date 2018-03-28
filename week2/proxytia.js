@@ -1,19 +1,16 @@
-var nama;
-var peran;
-
-nama = prompt("Siapa nama anda?");
-peran = prompt("Apakah peran anda?");
+var nama = 'Michael';
+var peran = '';
 
 if (nama === '' && peran === '') {
 	console.log('Nama harus diisi!');
 }
 
-if (nama != '' && peran === '') {
+else if (nama !== '' && peran === '') {
 	console.log('Halo ' + nama + 
 		', pilih peranmu untuk memulai game!');
 }
 
-if (peran === 'Ksatria') {
+else if (peran === 'Ksatria') {
 	console.log('Selamat datang di Dunia Proxytia, '
 		 + nama);
 	console.log('Halo ' + peran + ' ' + nama +
@@ -21,7 +18,7 @@ if (peran === 'Ksatria') {
 
 }
 
-if (peran === 'Tabib') {
+else if (peran === 'Tabib') {
 	console.log('Selamat datang di Dunia Proxytia, '
 		 + nama);
 	console.log('Halo ' + peran + ' ' + nama +
@@ -29,14 +26,10 @@ if (peran === 'Tabib') {
 
 }
 
-if (peran === 'Penyihir') {
+else if (peran === 'Penyihir') {
 	console.log('Selamat datang di Dunia Proxytia, '
 		 + nama);
 	console.log('Halo ' + peran + ' ' + nama +
 		', ciptakan keajaiban yang membantu kemenanganmu!');
 
-}
-
-else {
-	console.log('Peran cuma ada 3 yaitu: Ksatria, Tabib, dan Penyihir')
 }
