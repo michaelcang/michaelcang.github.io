@@ -27,7 +27,7 @@ for (var counter2 = 20; counter2 > 0; counter2--) {
 // 3. angka ganjil dan genap
 var count = 1;
 
-while (count < 100) {
+while (count <= 100) {
 	if (count % 2 === 1) {
 		console.log('GANJIL');
 	}
@@ -66,7 +66,7 @@ var count = 1;
 while (count < 100) {
 	count += 9;
 	if (count % 10 === 0) {
-		console.log(count + ' KELIPATAN 6');
+		console.log(count + ' KELIPATAN 10');
 	}
 	else 
 	  console.log('');
