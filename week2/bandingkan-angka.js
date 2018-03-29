@@ -1,14 +1,14 @@
 function bandingkanAngka(angka1, angka2) {
   if (angka1 < angka2) {
-  	return true;
+    return true;
   }
 
   if (angka1 > angka2) {
-  	return false;
+    return false;
   }
 
   if (angka1 === angka2) {
-  	return '-1';
+    return '-1';
   }
 }
 

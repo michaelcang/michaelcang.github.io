@@ -1,7 +1,7 @@
 function balikKata(kata) {
   var terbalik = '';
   for (var i = 1; i <= kata.length; i++) {
-  	terbalik += kata[kata.length - i];
+    terbalik += kata[kata.length - i];
   }
   return terbalik;
 }

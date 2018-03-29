@@ -1,12 +1,12 @@
 function konversiMenit(menit) {
   var minute = Math.floor(menit / 60);
   var second = menit % 60;
-  
+
   if (second < 10) {
-    second = "0" + second;
+    second = '0' + second;
   }
-  
-  return minute + ":" + second;
+
+  return minute + ':' + second;
 }
 
 // TEST CASES
