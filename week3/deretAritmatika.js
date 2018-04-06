@@ -1,8 +1,8 @@
 function tentukanDeretAritmatika(arr) {
-  deret = true;
-  i = 0;
-  beda1 = 0;
-  beda2 = 0;
+  var deret = true;
+  var i = 0;
+  var beda1 = 0;
+  var beda2 = 0;
 
   while (i < arr.length - 2) {
     beda1 = arr[i + 1] - arr[i];

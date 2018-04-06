@@ -1,6 +1,6 @@
 function perkalianUnik(arr) {
-  hasil = [];
-  total = 1;
+  var hasil = [];
+  var total = 1;
   for (var j = 0; j < arr.length; j++) {
     total *= arr[j];
   }

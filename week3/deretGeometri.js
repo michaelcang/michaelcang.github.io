@@ -1,8 +1,8 @@
 function tentukanDeretGeometri(arr) {
-  deret = true;
+  var deret = true;
   for (var i = 0; i < arr.length - 2; i++) {
-    beda1 = arr[i + 1] / arr[i];
-    beda2 = arr[i + 2] / arr[i + 1];
+    var beda1 = arr[i + 1] / arr[i];
+    var beda2 = arr[i + 2] / arr[i + 1];
     if (beda1 !== beda2) {
       deret = false;
     }

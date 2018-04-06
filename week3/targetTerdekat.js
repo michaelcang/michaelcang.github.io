@@ -1,6 +1,6 @@
 function targetTerdekat(arr) {
-  jarak = 0;
-  jarakTerdekat = arr.length;
+  var jarak = 0;
+  var jarakTerdekat = arr.length;
   for (var i = 0; i < arr.length; i++) {
     if (arr[i] === 'o') {
       for (var j = 0; j < arr.length; j++) {
@@ -12,7 +12,7 @@ function targetTerdekat(arr) {
         }
       }
       if (jarakTerdekat === arr.length) {
-        jarakTerdekat = 0
+        jarakTerdekat = 0;
       }
     }
   }
