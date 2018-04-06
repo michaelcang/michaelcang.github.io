@@ -5,7 +5,7 @@ function groupAnimals(animals) {
     for (var j = 0; j < kelompok.length; j++) {
       if (animals[i][0] === kelompok[j][0][0]) {
         kelompok[j].push(animals[i]);
-        animals[i] = 'a';
+        animals[i] = kelompok[0][0][0];
       }
     }
     if (animals[i][0] < kelompok[0][0][0]) {
