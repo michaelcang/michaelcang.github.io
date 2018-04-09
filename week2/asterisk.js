@@ -30,3 +30,23 @@ for (row = 1; row <= rows3; row++) {
   console.log(asterisk);
 }
 
+// 4. box asterisk
+
+var row4 = 5;
+var col4 = 3;
+
+for (var row = 0; row <= row4 - 1; row++) {
+  asterisk = '';
+  for (var col = 0; col <= col4 - 1; col++) {
+    if (row === 0 || row === row4 - 1) {
+      asterisk += '*';
+    }
+    if (row > 0 && row < row4 - 1) {
+      if (col === 0 || col === col4 - 1) {
+        asterisk += '*';
+      } else {asterisk += ' ';}
+    }
+  }
+  console.log(asterisk);
+}
+
