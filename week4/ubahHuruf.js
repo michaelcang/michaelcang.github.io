@@ -1,6 +1,6 @@
 function ubahHuruf(kata) {
   var kataBaru = '';
-  var hurukNum = 0;
+  var hurufNum = 0;
   for (var i = 0; i < kata.length; i++) {
     if (kata[i] === 'z') {kataBaru += 'a';
     } else {hurufNum = kata[i].charCodeAt(0) + 1;
