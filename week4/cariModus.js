@@ -15,7 +15,7 @@ function cariModus(arr) {
     }
   }
   if (countAwal === 1 || countAwal === arr.length) {modus = -1;}
-  return modus + ' ' + countAwal;
+  return modus;
 }
 
 // TEST CASES
