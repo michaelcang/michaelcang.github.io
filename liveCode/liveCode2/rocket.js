@@ -1,13 +1,12 @@
 function arrayMerge(firstData, secondData) {
-  var sama = 0;
   for (var i = 0; i < secondData.length; i++) {
-    sama = 0;
+    var sama = false;
     for (var j = 0; j < firstData.length; j++) {
       if (secondData[i] === firstData[j]) {
-        sama += 1;
+        sama = true;
       }
     }
-    if (sama === 0) {firstData.push(secondData[i]);}
+    if (sama === false) {firstData.push(secondData[i]);}
   }
   return firstData;
 }

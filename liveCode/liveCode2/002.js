@@ -10,8 +10,9 @@ function groupOddEven(students) {
     } else {odd.push(students[i]);}
   }
   if (students.length === 0) {return '';}
-  if (odd.length === 0) {return 'EVENS: ' + even;}
-  if (even.length === 0) {return 'ODDS: ' + odd;} else {return 'ODDS: ' + odd + ' ' + 'EVENS: ' + even;}
+  if (odd.length === 0) {return 'EVENS: ' + even.join(', ');}
+  if (even.length === 0) {return 'ODDS: ' + odd.join(', ');
+  } else {return 'ODDS: ' + odd.join(', ') + ' ' + 'EVENS: ' + even.join(', ');}
 }
 
 // TEST CASES
