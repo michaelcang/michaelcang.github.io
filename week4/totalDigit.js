@@ -1,17 +1,16 @@
 function totalDigitRekursif(angka) {
+  // var total = 0;
+  // var string = String(angka);
+  // for (var i = 0; i < string.length; i++) {
+  //   total += Number(string[i]);
+  // }
+  // return total;
   var string = String(angka);
-  var arr = string.split('');
-  var digit = Number(arr[arr.length - 1]);
-  var total = 0;
   if (string.length === 1) {
-    total += Number(arr[0]);
-    return total;
+    return Number(string[0]);
   } else {
-    arr[0] = Number(arr[0]) + digit;
-    arr.pop();
-    arr = arr.join('');
-    console.log(arr);
-    return totalDigitRekursif(arr);
+    return Number(string[string.length - 1]) +
+    totalDigitRekursif(string.slice(0, string.length - 1));
   }
 }
 
