@@ -6,45 +6,46 @@ function countProfit(shoppers) {
 
   // you can only write your code here!
   if (shoppers.length === 0) {return [];}
-  var sepatu = {
+  var item1 = {
     product: list[0][0],
     shoppers: [],
     leftOver: list[0][2],
     totalProfit: 0
   };
-  var baju = {
+  var item2 = {
     product: list[1][0],
     shoppers: [],
     leftOver: list[1][2],
     totalProfit: 0
   };
-  var sweater = {
+  var item3 = {
     product: list[2][0],
     shoppers: [],
     leftOver: list[2][2],
     totalProfit: 0
   };
-  var hasil = [sepatu, baju, sweater];
+  var hasil = [item1, item2, item3];
   for (var i = 0; i < shoppers.length; i++) {
-    if (shoppers[i].product === 'Sepatu Stacattu') {
-      if (shoppers[i].amount <= sepatu.leftOver) {
-        sepatu.shoppers.push(shoppers[i].name);
-        sepatu.leftOver -= shoppers[i].amount;
-        sepatu.totalProfit += shoppers[i].amount * list[0][1];
-      }
-    }
-    if (shoppers[i].product === 'Baju Zoro') {
-      if (shoppers[i].amount <= baju.leftOver) {
-        baju.shoppers.push(shoppers[i].name);
-        baju.leftOver -= shoppers[i].amount;
-        baju.totalProfit += shoppers[i].amount * list[1][1];
-      }
-    }
-    if (shoppers[i].product === 'Sweater Uniklooh') {
-      if (shoppers[i].amount <= sweater.leftOver) {
-        sweater.shoppers.push(shoppers[i].name);
-        sweater.leftOver -= shoppers[i].amount;
-        sweater.totalProfit += shoppers[i].amount * list[2][1];
+    for (var j = 0; j < list.length; j++) {
+      if (shoppers[i].product === list[j][0] && shoppers[i].amount <= list[j][2]) {
+        if (j === 0) {
+          item1.shoppers.push(shoppers[i].name);
+          list[j][2] -= shoppers[i].amount;
+          item1.leftOver -= shoppers[i].amount;
+          item1.totalProfit += shoppers[i].amount * list[0][1];
+        }
+        if (j === 1) {
+          item2.shoppers.push(shoppers[i].name);
+          list[j][2] -= shoppers[i].amount;
+          item2.leftOver -= shoppers[i].amount;
+          item2.totalProfit += shoppers[i].amount * list[1][1];
+        }
+        if (j === 2) {
+          item3.shoppers.push(shoppers[i].name);
+          list[j][2] -= shoppers[i].amount;
+          item3.leftOver -= shoppers[i].amount;
+          item3.totalProfit += shoppers[i].amount * list[2][1];
+        }
       }
     }
   }
