@@ -111,10 +111,7 @@ class Sudoku {
 // The file has newlines at the end of each line,
 // so we call split to remove it (\n)
 
-var fs = require('fs');
-var boardString = fs.readFileSync('set-01_sample.unsolved.txt')
-  .toString()
-  .split('\n')[3];
+var boardString = '105802000090076405200400819019007306762083090000061050007600030430020501600308900'
 
 var game = new Sudoku(boardString);
 

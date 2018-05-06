@@ -149,7 +149,7 @@ class Boggle {
 }
 
 const assert = require('assert');
-const words =  require('./data.js');
+const words =  require('./dictionary.js');
 // const words = ['KAZE','JETE','KAZDG']; // this is test dictionary
 var game = new Boggle(words);
 
